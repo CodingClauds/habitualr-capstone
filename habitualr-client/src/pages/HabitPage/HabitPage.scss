@@ -1,0 +1,52 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.habit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-teal;
+  opacity: 0.8;
+
+  &__title {
+    font-size: 24px;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__chosen {
+    background-color: $primary-white;
+    color: $primary-black;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 10rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 4px -1px rgb(0 0 0 / 20%);
+  }
+
+  // &__one{
+  //     background-color: g;
+  // }
+
+  // &__two {
+
+  // }
+
+  // &__three
+  // &__four
+  // &__five
+  // &__six
+  // &__seven
+  // &__eight
+}
