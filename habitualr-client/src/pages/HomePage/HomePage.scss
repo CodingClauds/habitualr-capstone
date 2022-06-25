@@ -1,0 +1,18 @@
+.homepage {
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  &__submit {
+    background-color: #323232;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+  }
+}
