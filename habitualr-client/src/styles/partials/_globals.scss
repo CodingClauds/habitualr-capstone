@@ -1,4 +1,4 @@
-@use '../../styles/partials/_typography.scss';
+@use "../../styles/partials/_typography.scss";
 
 * {
   box-sizing: inherit;
@@ -8,6 +8,7 @@
 
 body {
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
 li {

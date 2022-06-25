@@ -1,0 +1,47 @@
+@use "../../styles/partials/_typography.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+@use "../../styles/partials/_globals.scss" as *;
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   align-items: center;
+  padding: 1rem 3rem;
+  background-color: $background-beige;
+  min-height: 5rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__site-logo {
+    width: 4rem;
+  }
+
+  &__item-title {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: 400;
+    color: $primary-black;
+  }
+
+  &__item-statement {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $primary-black;
+    margin: 0.5rem 0;
+  }
+}
