@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "../HabitPage/HabitPage.scss";
+import returnButton from "../../assets/images/icons8-back-arrow-100.png";
 
 class HabitPage extends Component {
   onClick = (e) => {
@@ -12,7 +13,17 @@ class HabitPage extends Component {
     return (
       <>
         <section className="habit">
-          <h1 className="habit__title">Choose one Habit to focus on:</h1>
+          <div className="habit__return">
+            <a className="habit__return-link" href="/">
+              <img
+                className="habit__return-image"
+                src={returnButton}
+                alt="Arrow icon that links user back to homepage"
+              />
+            </a>
+            <h1 className="habit__title">Choose a Habit to focus on:</h1>
+          </div>
+
           <div className="habit__content">
             <button className="habit__chosen habit__one" onClick={this.onClick}>
               Make my Bed
