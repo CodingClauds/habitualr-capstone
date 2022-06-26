@@ -1,3 +1,5 @@
+@use "../../styles/partials/_variables.scss" as *;
+
 .homepage {
   &__form {
     display: flex;
