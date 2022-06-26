@@ -28,9 +28,9 @@ export default function TrackerPage() {
             </div>
           </div>
 
-          {/* <h2 className="statement__subtitle">Let's Track your Progress!</h2> */}
-          <div className="statement__content">
-            <p className="statement__description">
+          {/* <h2 className="progress__subtitle">Let's Track your Progress!</h2> */}
+          <div className="progress__content">
+            <p className="progress__description">
               The theory is that just by making your bed, you've accomplished at
               least that one thing. So, the simple act of tidying up your covers
               lets you begin your morning with a small success that will
@@ -40,6 +40,7 @@ export default function TrackerPage() {
           </div>
 
           {/* This is where the calendar / tracker would go */}
+          <div id="calendar__container"></div>
         </div>
       </section>
     </>

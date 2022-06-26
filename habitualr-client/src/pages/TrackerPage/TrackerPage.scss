@@ -36,24 +36,21 @@
 
   &__habit-id {
     font-size: 1.5rem;
+    font-weight: 400;
   }
 
   &__info-image {
-    width: 1.3rem;
+    width: 1.5rem;
   }
-}
 
-.statement {
   &__subtitle {
     font-size: 16px;
   }
 
-  &__content {
-  }
   &__description {
     font-size: 12px;
     letter-spacing: 1px;
-    line-height: 1.6;
+    line-height: 1.5;
     padding: 1.2rem;
     margin-top: 1rem;
   }
