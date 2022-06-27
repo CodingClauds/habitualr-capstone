@@ -1,5 +1,5 @@
 import "../Header/Header.scss";
-import brandlogo from "../../assets/images/wrench-black-100x100.png";
+// import brandlogo from "../../assets/images/wrench-black-100x100.png";
 
 function Header() {
   return (
