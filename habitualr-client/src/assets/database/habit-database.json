@@ -2,81 +2,71 @@
   {
     "id": "1",
     "habit": "Make my Bed",
-    "effort/goal": "10 mins",
-    "completed": "boolean value",
-    "description": "The theory is that just by making your bed, you've accomplished at least that one thing. So, the simple act of tidying up your covers lets you begin your morning with a small success that will encourage many more throughout the day. If you make your bed, you make your day!",
-    "timestamp": 1626032763000
+    "commitment": "10 mins",
+    "completed": "false",
+    "description": "The theory is that just by making your bed, you've accomplished at least that one thing. So, the simple act of tidying up your covers lets you begin your morning with a small success that will encourage many more throughout the day. If you make your bed, you make your day!"
   },
   {
     "id": "2",
     "habit": "Sleep",
-    "effort/goal": "6 - 8 hours",
-    "completed": "boolean value",
-    "description": "Sleep is important because it can help us physically heal, recover from illness, deal with stress, solve problems, consolidate memories, and improves motor skills. A good night’s sleep isn’t just about how many hours of sleep you get, but also the quality of that sleep.",
-    "timestamp": 1626032763000
+    "commitment": "6 - 8 hours",
+    "completed": "false",
+    "description": "Sleep is important because it can help us physically heal, recover from illness, deal with stress, solve problems, consolidate memories, and improves motor skills. A good night’s sleep isn’t just about how many hours of sleep you get, but also the quality of that sleep."
   },
   {
     "id": "3",
     "habit": "Limit Screen-Time",
-    "effort/goal": "Disconnect",
-    "completed": "boolean value",
-    "description": "95% of Canadian Millennials own a smartphone, with that being said your smartphone is probably the first thing you check in the morning and the last thing you check before you fall asleep. Lets limit that as best we can, try and disconnect and see how long you can go without reaching for it.",
-    "timestamp": 1626032763000
+    "commitment": "Disconnect",
+    "completed": "false",
+    "description": "95% of Canadian Millennials own a smartphone, with that being said your smartphone is probably the first thing you check in the morning and the last thing you check before you fall asleep. Lets limit that as best we can, try and disconnect and see how long you can go without reaching for it."
   },
   {
     "id": "4",
     "habit": "Alcohol Intake",
-    "effort/goal": "1 - 2 Drink",
-    "completed": "boolean value",
-    "description": "Write down the maximum number of drinks you want to drink per day (2 glasses of wine, 3 beers etc) and the maximum number of days a week you want to drink (Only 3 out of the 7 days, try to stick to a weekday or every other day). Writing down specific goals helps you set a realistic approach.",
-    "timestamp": 1626032763000
+    "commitment": "1 - 2 Drink",
+    "completed": "false",
+    "description": "Write down the maximum number of drinks you want to drink per day (2 glasses of wine, 3 beers etc) and the maximum number of days a week you want to drink (Only 3 out of the 7 days, try to stick to a weekday or every other day). Writing down specific goals helps you set a realistic approach."
   },
   {
     "id": "5",
     "habit": "Exercise",
-    "effort/goal": "1 Hour",
-    "completed": "boolean value",
-    "description": "Exercise is the best-kept secret in preventive medicine. Despite our differences, we all need to exercise for health. Being physically active can improve your mood and decrease feelings of depression, anxiety, and stress. They can also help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday tasks.",
-    "timestamp": 1626032763000
+    "commitment": "1 Hour",
+    "completed": "false",
+    "description": "Exercise is the best-kept secret in preventive medicine. Despite our differences, we all need to exercise for health. Being physically active can improve your mood and decrease feelings of depression, anxiety, and stress. They can also help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday tasks."
   },
   {
     "id": "6",
     "habit": "Read a Book",
-    "effort/goal": "30 mins",
-    "completed": "boolean value",
-    "description": "Whether you're reading 30 minutes each day or upwards of two hours, the key is to get some (book) reading in every single day. Just as exercise helps your body stay healthier longer, reading is an exercise that helps keep your brain fit. As they say, use it or lose it! The next time you cozy up to read with a cup of tea, you can say you are getting your daily dose of (brain) exercise.",
-    "timestamp": 1626032763000
+    "commitment": "30 mins",
+    "completed": "false",
+    "description": "Whether you're reading 30 minutes each day or upwards of two hours, the key is to get some (book) reading in every single day. Just as exercise helps your body stay healthier longer, reading is an exercise that helps keep your brain fit. As they say, use it or lose it! The next time you cozy up to read with a cup of tea, you can say you are getting your daily dose of (brain) exercise."
   },
   {
     "id": "7",
     "habit": "Water Intake",
-    "effort/goal": "2 Liters",
-    "completed": "boolean value",
-    "description": "Health experts commonly recommend eight 8-ounce glasses, which equals about 2 liters, or half a gallon a day. This is called the 8×8 rule and is very easy to remember. Best way to fix this, buy a insulated bottle that you fancy and stick to it. Keep it near and drink up! Benifits of staying hydrated are profound",
-    "timestamp": 1626032763000
+    "commitment": "2 Liters",
+    "completed": "false",
+    "description": "Health experts commonly recommend eight 8-ounce glasses, which equals about 2 liters, or half a gallon a day. This is called the 8×8 rule and is very easy to remember. Best way to fix this, buy a insulated bottle that you fancy and stick to it. Keep it near and drink up! Benifits of staying hydrated are profound"
   },
   {
     "id": "8",
     "habit": "Free Time",
-    "effort/goal": "30 - 60 mins",
-    "completed": "boolean value",
-    "description": "Free Time Means Free Time. This habit is for the workaholics and entrepreneurs out there like myself who forget that “free time” doesn’t mean “freely working on more new projects.” Free time literally means free time. Time spent on nothing. Go for a walk in the park. Go meet an old friend for coffee, go call your Grandmother. Go watch an entire movie without getting up halfway through because you feel like you’re being unproductive. This free time as a scheduled habit will help reset your brain and help you return to work later with revitalized enthusiasm.",
-    "timestamp": 1626032763000
+    "commitment": "30 - 60 mins",
+    "completed": "false",
+    "description": "Free Time Means Free Time. This habit is for the workaholics and entrepreneurs out there like myself who forget that “free time” doesn’t mean “freely working on more new projects.” Free time literally means free time. Time spent on nothing. Go for a walk in the park. Go meet an old friend for coffee, go call your Grandmother. Go watch an entire movie without getting up halfway through because you feel like you’re being unproductive. This free time as a scheduled habit will help reset your brain and help you return to work later with revitalized enthusiasm."
   },
   {
     "id": "9",
     "habit": "Socialize",
-    "effort/goal": "5 - 10 mins",
-    "completed": "boolean value",
-    "description": "Socializing not only staves off feelings of loneliness, but also it helps sharpen memory and cognitive skills, increases your sense of happiness and well-being, and may even help you live longer. Start small by saying Thank you at your local cafe or flashing a smile at someone is a social habit.",
-    "timestamp": 1626032763000
+    "commitment": "5 - 10 mins",
+    "completed": "false",
+    "description": "Socializing not only staves off feelings of loneliness, but also it helps sharpen memory and cognitive skills, increases your sense of happiness and well-being, and may even help you live longer. Start small by saying Thank you at your local cafe or flashing a smile at someone is a social habit."
   },
   {
     "id": "10",
     "habit": "Get Outside!",
-    "effort/goal": "15 - 30 mins",
-    "completed": "boolean value",
-    "description": "The good news is that it's never been easier to get time in the great outdoors. What's more interesting is even as little as 15 minutes of sunshine has been shown to boost energy levels and mood. So while you're thinking about your new years' resolutions, why not start by strolling around the neighbourhood?",
-    "timestamp": 1626032763000
+    "commitment": "15 - 30 mins",
+    "completed": "false",
+    "description": "The good news is that it's never been easier to get time in the great outdoors. What's more interesting is even as little as 15 minutes of sunshine has been shown to boost energy levels and mood. So while you're thinking about your new years' resolutions, why not start by strolling around the neighbourhood?"
   }
 ]
