@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "../HabitPage/HabitPage.scss";
-import returnButton from "../../assets/images/icons8-back-arrow-100.png";
+import returnButton from "../../assets/images/back-arrow-100x100.png";
 
 class HabitPage extends Component {
   onClick = (e) => {
