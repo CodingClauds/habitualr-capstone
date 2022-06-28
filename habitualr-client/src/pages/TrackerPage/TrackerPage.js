@@ -2,6 +2,7 @@ import React from "react";
 import "../TrackerPage/TrackerPage.scss";
 import returnButton from "../../assets/images/back-60.png";
 import infoIcon from "../../assets/images/info.svg";
+import Calendar from "../../components/Calendar/Calendar";
 
 export default function TrackerPage() {
   return (
@@ -38,10 +39,11 @@ export default function TrackerPage() {
               make your day!
             </p>
           </div>
-
-          {/* This is where the calendar / tracker would go */}
-          <div id="calendar__container"></div>
         </div>
+
+        <section className="progress__calendar">
+          <Calendar />
+        </section>
       </section>
     </>
   );
