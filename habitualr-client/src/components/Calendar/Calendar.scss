@@ -1,0 +1,45 @@
+@use "../../styles/partials/_mixins.scss" as *;
+
+// .demo-app-sidebar-section {
+//   // style the header for the calendar here = the month should be here!
+// }
+
+// .fc .fc-toolbar {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin: 1rem;
+
+  @include tablet {
+    margin: 2rem;
+  }
+}
+
+.fc .fc-toolbar-title {
+  font-size: 0.95rem !important;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.fc-view-harness {
+  margin-top: 1.5rem;
+}
+
+.fc .fc-button {
+  padding: 6px 3px;
+  //   color: ;
+
+  @include tablet {
+    padding: 15px 15px;
+  }
+}
+
+.fc .fc-daygrid-body-balanced .fc-daygrid-day-events {
+  display: none;
+}
+
+.fc-today-button.fc-button.fc-button-primary {
+  display: none;
+}
