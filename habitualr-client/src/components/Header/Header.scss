@@ -5,25 +5,19 @@
 
 .brand {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  //   align-items: center;
+  justify-content: center;
   padding: 1rem 3rem;
   background-color: $background-beige;
   min-height: 5rem;
 
   @include tablet {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
-  }
-
-  &__item {
-    display: flex;
   }
 
   &__site-logo {
