@@ -1,11 +1,17 @@
 @use "../../styles/partials/_variables.scss" as *;
 
 .homepage {
+  background-image: url(../../assets/images/fabio-comparelli-uq2E2V4LhCY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
   &__form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
   }
 
   &__submit {
@@ -16,5 +22,7 @@
     border: none;
     padding: 1rem 3rem;
     border-radius: 30px;
+    margin: 0 2rem;
+    margin-top: 10rem;
   }
 }
