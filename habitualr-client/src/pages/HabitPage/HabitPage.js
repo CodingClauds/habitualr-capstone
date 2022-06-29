@@ -24,6 +24,10 @@ class HabitPage extends Component {
             <h1 className="habit__title">Choose a Habit to focus on:</h1>
           </div>
 
+          {/* <section className="habit__">
+
+          </section> */}
+
           <div className="habit__content">
             <button className="habit__chosen habit__one" onClick={this.onClick}>
               Make my Bed
