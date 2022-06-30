@@ -50,15 +50,32 @@
   }
 
   &__chosen {
-    background-color: $primary-white;
-    color: $primary-black;
-    text-transform: capitalize;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
+    // background-color: $primary-white;
+    // color: $primary-black;
+    // text-transform: capitalize;
+    // font-size: 14px;
+    // border: none;
+    // border-radius: 5px;
+    // width: 15rem;
+    // padding: 1rem;
+    // margin: 0.8rem;
+    // box-shadow: 0 4px 4px -1px rgb(0 0 0 / 20%);
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
     width: 15rem;
     padding: 1rem;
-    margin: 0.8rem;
+    margin-top: 16px;
+    max-height: 3em;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $primary-black;
+    background-color: $primary-white;
+    border: none;
+    border-radius: 5px;
     box-shadow: 0 4px 4px -1px rgb(0 0 0 / 20%);
 
     @include tablet {
@@ -75,18 +92,19 @@
     }
   }
 
-  // &__one{
-  //     background-color: g;
+  &__icon {
+    width: 2rem;
+
+    @include tablet {
+      width: 3rem;
+    }
+  }
+
+  // this will be positon of all icons in the button
+
+  // &__image {
+
   // }
 
-  // &__two {
-
-  // }
-
-  // &__three
-  // &__four
-  // &__five
-  // &__six
-  // &__seven
-  // &__eight
+  // this will be the image specific to the button/habit.
 }
