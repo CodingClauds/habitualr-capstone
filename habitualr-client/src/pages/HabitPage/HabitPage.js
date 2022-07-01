@@ -10,6 +10,8 @@ import exerciseIcon from "../../assets/images/dumbbell-64.png";
 import bedIcon from "../../assets/images/bed-96.png";
 import waterIcon from "../../assets/images/water-bottle-58.png";
 import freetimeIcon from "../../assets/images/leisure-64.png";
+import sunIcon from "../../assets/images/sun-64.png";
+import chatIcon from "../../assets/images/chat-100.png";
 
 class HabitPage extends Component {
   onClick = (e) => {
@@ -42,8 +44,8 @@ class HabitPage extends Component {
               onClick={this.onClick}
             >
               <img className="habit__icon" src={bookIcon} alt="book" />
-              <span class="habit__btn-text">Read a Book</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Read a Book</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -51,8 +53,8 @@ class HabitPage extends Component {
               onClick={this.onClick}
             >
               <img className="habit__icon" src={sleepIcon} alt="sleep icon" />
-              <span class="habit__btn-text">Sleep</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Sleep</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -60,8 +62,8 @@ class HabitPage extends Component {
               onClick={this.onClick}
             >
               <img className="habit__icon" src={screenIcon} alt="screen icon" />
-              <span class="habit__btn-text">Screen-Time</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Screen-Time</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -73,8 +75,17 @@ class HabitPage extends Component {
                 src={drinkIcon}
                 alt="glass of wine icon"
               />
-              <span class="habit__btn-text">Alcohol Intake</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Alcohol Intake</span>
+              <div className="habit__btnbox"></div>
+            </button>
+
+            <button
+              className="habit__chosen habit__image--eight"
+              onClick={this.onClick}
+            >
+              <img className="habit__icon" src={sunIcon} alt="lesuire icon" />
+              <span className="habit__btn-text">Get Outside!</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -86,8 +97,8 @@ class HabitPage extends Component {
                 src={exerciseIcon}
                 alt="dumbell icon"
               />
-              <span class="habit__btn-text">Exercise</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Exercise</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -95,8 +106,8 @@ class HabitPage extends Component {
               onClick={this.onClick}
             >
               <img className="habit__icon" src={bedIcon} alt="bed icon" />
-              <span class="habit__btn-text">Make my Bed</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Make my Bed</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -108,8 +119,17 @@ class HabitPage extends Component {
                 src={waterIcon}
                 alt="water bottle icon"
               />
-              <span class="habit__btn-text">Water Intake</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Water Intake</span>
+              <div className="habit__btnbox"></div>
+            </button>
+
+            <button
+              className="habit__chosen habit__image--eight"
+              onClick={this.onClick}
+            >
+              <img className="habit__icon" src={chatIcon} alt="lesuire icon" />
+              <span className="habit__btn-text">Socialize</span>
+              <div className="habit__btnbox"></div>
             </button>
 
             <button
@@ -121,8 +141,8 @@ class HabitPage extends Component {
                 src={freetimeIcon}
                 alt="lesuire icon"
               />
-              <span class="habit__btn-text">Free Time</span>
-              <div class="habit__btnbox"></div>
+              <span className="habit__btn-text">Free Time</span>
+              <div className="habit__btnbox"></div>
             </button>
           </div>
         </section>
