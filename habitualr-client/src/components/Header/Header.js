@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../Header/Header.scss";
 
 function Header() {
@@ -5,11 +6,19 @@ function Header() {
     <>
       <header className="brand">
         <div className="brand__link-content">
+          <h1 className="brand__item-title">Sproutr</h1>
           <nav className="brand__nav">
-            <h1 className="brand__item-title">Habitr</h1>
-            <h2 className="brand__item-statement">
-              Build &amp; Track the Habits that matter.
-            </h2>
+            <ul className="brand__nav-list">
+              <li className="brand__nav-item">
+                <NavLink to="/" exact={true}>
+                  Home
+                </NavLink>
+              </li>
+
+              <li className="brand__nav-item">
+                <NavLink to="/about-us">About Us</NavLink>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
