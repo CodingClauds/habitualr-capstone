@@ -3,9 +3,12 @@
 @use "../../styles/partials/_mixins.scss" as *;
 @use "../../styles/partials/_globals.scss" as *;
 
+.is-active {
+  font-weight: bold;
+}
+
 .brand {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 1rem 3rem;
   background-color: $background-beige;
   min-height: 5rem;
@@ -13,11 +16,39 @@
   @include tablet {
     flex-direction: row;
     justify-content: flex-start;
+    padding: 1rem 5rem;
+  }
+
+  &__content {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__nav {
+    margin: 1rem;
+  }
+
+  &__nav-list {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    justify-content: space-between;
+    width: 12rem;
+  }
+
+  &__nav-item {
+    font-size: 20px;
+    color: black;
+  }
+
+  &__nav-item:hover {
+    border-bottom: 3px solid gray;
+    transition: all 0.3s;
+  }
+
+  &__bold {
+    color: black;
   }
 
   &__site-logo {
@@ -28,14 +59,14 @@
     font-size: 3rem;
     letter-spacing: -1px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     color: $primary-black;
   }
 
-  &__item-statement {
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: $primary-black;
-    margin: 0.5rem 0;
-  }
+  // &__item-statement {
+  //   font-size: 1.3rem;
+  //   font-weight: 300;
+  //   color: $primary-black;
+  //   margin: 0.5rem 0;
+  // }
 }

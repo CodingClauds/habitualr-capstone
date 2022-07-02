@@ -1,22 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Header/Header.scss";
 
 function Header() {
   return (
     <>
       <header className="brand">
-        <div className="brand__link-content">
+        <div className="brand__content">
           <h1 className="brand__item-title">Sproutr</h1>
           <nav className="brand__nav">
             <ul className="brand__nav-list">
               <li className="brand__nav-item">
-                <NavLink to="/" exact={true}>
-                  Home
-                </NavLink>
+                <Link to="/" exact={true} activeClassName="is-active">
+                  <p className="brand__bold">Home</p>
+                </Link>
               </li>
 
               <li className="brand__nav-item">
-                <NavLink to="/about-us">About Us</NavLink>
+                <Link to="/about-us" activeClassName="is-active">
+                  <p className="brand__bold">About Us</p>
+                </Link>
               </li>
             </ul>
           </nav>
