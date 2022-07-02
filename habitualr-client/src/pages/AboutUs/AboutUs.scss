@@ -56,6 +56,9 @@
     @include tablet {
       font-size: 18px;
     }
+
+    @include desktop {
+    }
   }
 
   &__para-one,
@@ -78,7 +81,7 @@
   &__card {
     background-color: #5995df;
     color: white;
-    min-height: 27.5rem;
+    min-height: 20rem;
     max-height: 30rem;
     padding: 1.5rem;
     margin-top: 3rem;
@@ -86,15 +89,15 @@
     box-shadow: 0 5px 5px 3px rgb(0 0 0 / 20%);
 
     @include tablet {
-      max-width: 30rem;
-      min-height: 25rem;
-      max-height: 25rem;
+      max-width: 40rem;
+      min-height: 16rem;
+      max-height: 18rem;
       margin: 4rem 1.25rem 2rem 1.25rem;
     }
 
     @include desktop {
-      max-width: 44rem;
-      min-height: 11rem;
+      max-width: 50rem;
+      min-height: 18rem;
       max-height: 25rem;
       margin-left: 2rem;
     }
