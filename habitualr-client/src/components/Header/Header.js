@@ -10,16 +10,22 @@ function Header() {
           <nav className="brand__nav">
             <ul className="brand__nav-list">
               <li className="brand__nav-item">
-                <Link to="/" exact={true} activeClassName="is-active">
+                <Link to="/" activeclassname="is-active">
                   <p className="brand__bold">Home</p>
                 </Link>
               </li>
 
               <li className="brand__nav-item">
-                <Link to="/about-us" activeClassName="is-active">
+                <Link to="/about-us" activeclassname="is-active">
                   <p className="brand__bold">About Us</p>
                 </Link>
               </li>
+
+              {/* <li className="brand__nav-item">
+                <Link to="/sign-up" activeclassname="is-active">
+                  <p className="brand__bold">Sign Up</p>
+                </Link>
+              </li> */}
             </ul>
           </nav>
         </div>

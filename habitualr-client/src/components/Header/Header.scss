@@ -35,6 +35,10 @@
     // flex-direction: column;
     justify-content: space-between;
     width: 12rem;
+
+    // @include tablet {
+    //   width: 20rem;
+    // }
   }
 
   &__nav-item {
