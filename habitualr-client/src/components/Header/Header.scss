@@ -39,31 +39,31 @@
     justify-content: space-around;
     width: 20rem;
     height: 2rem;
+  }
 
-    &__nav-item {
-      font-size: 20px;
-      color: $primary-black;
-    }
+  &__nav-item {
+    font-size: 20px;
+    color: $primary-black;
+  }
 
-    &__nav-item:hover {
-      border-bottom: 3px solid $secondary-slate;
-      transition: all 0.3s;
-    }
+  &__nav-item:hover {
+    border-bottom: 3px solid $secondary-slate;
+    transition: all 0.3s;
+  }
 
-    &__bold {
-      color: $primary-black;
-    }
+  &__bold {
+    color: $primary-black;
+  }
 
-    &__site-logo {
-      width: 4rem;
-    }
+  &__site-logo {
+    width: 4rem;
+  }
 
-    &__item-title {
-      font-size: 3rem;
-      letter-spacing: -1px;
-      font-style: italic;
-      font-weight: 600;
-      color: $primary-black;
-    }
+  &__item-title {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: 600;
+    color: $primary-black;
   }
 }
