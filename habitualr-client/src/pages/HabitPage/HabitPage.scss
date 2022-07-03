@@ -54,6 +54,7 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    cursor: pointer;
     width: 18rem;
     padding: 1rem;
     margin-top: 16px;
@@ -79,6 +80,11 @@
       width: 25rem;
       padding: 5rem;
     }
+  }
+
+  &__chosen:hover {
+    background-color: #9bc8e8;
+    transition: all 0.5s;
   }
 
   &__icon {
