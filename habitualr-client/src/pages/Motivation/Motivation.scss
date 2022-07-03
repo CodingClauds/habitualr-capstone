@@ -1,44 +1,101 @@
+@use "../../styles/partials/_mixins.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
+
 .description {
+  display: flex;
+  justify-content: center;
   height: 100vh;
-  background-color: navy;
+  background-color: $primary-honeydew;
 
   &__card {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: white;
+    // min-width: 18rem;
+    // max-width: 18rem;
+    // min-height: 25rem;
+    // max-height: 25rem;
+    // padding: 1rem;
+    // border-radius: 10px;
+    // box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 50%);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    min-width: 18rem;
-    max-width: 18rem;
-    min-height: 25rem;
-    max-height: 25rem;
+    background-color: $primary-white;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 30rem;
+    max-height: 32rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 50%);
+    margin-top: 2rem;
+
+    @include tablet {
+      padding: 2rem;
+    }
+
+    @include desktop {
+      padding: 3rem;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
   }
 
   &__return-image {
     width: 1.5rem;
+
+    @include tablet {
+      width: 2rem;
+    }
   }
 
   &__habit-id {
     font-size: 1.5rem;
     font-weight: 400;
+    margin: 0 1rem;
+
+    @include tablet {
+      font-size: 2.5rem;
+    }
   }
 
   &__info-image {
     width: 1.5rem;
-  }
 
-  // &__subtitle {
-  //   font-size: 16px;
-  // }
+    @include tablet {
+      width: 2rem;
+    }
+  }
 
   &__text {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.5;
-    // padding: 1.2rem;
-    // margin-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__calendar-btn {
+    font-size: 16px;
+    padding: 0.8rem;
+    margin-top: 4rem;
+    border: 1px solid $primary-black;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  &__calendar-btn:hover {
+    background-color: $supporting-lightblue;
+    transition: all 0.7s;
   }
 }

@@ -44,8 +44,10 @@ class Motivation extends Component {
               </p>
             </div>
             {/* this will take us to the calendar page */}
-            <Link to="/calendar" className="description__calendar-btn">
-              <button type="button">Let's Track your Progress!</button>
+            <Link to="/calendar">
+              <button className="description__calendar-btn" type="button">
+                Let's Track your Progress!
+              </button>
             </Link>
           </div>
         </section>
