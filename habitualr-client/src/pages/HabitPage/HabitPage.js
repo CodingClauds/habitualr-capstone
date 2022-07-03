@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "../HabitPage/HabitPage.scss";
 import returnButton from "../../assets/images/back-60.png";
 import bookIcon from "../../assets/images/book-96.png";
@@ -16,7 +17,7 @@ import chatIcon from "../../assets/images/chat-100.png";
 class HabitPage extends Component {
   onClick = (e) => {
     e.preventDefault();
-    this.props.history.push("/tracker");
+    this.props.history.push("/motivation");
   };
 
   render() {
@@ -24,13 +25,14 @@ class HabitPage extends Component {
       <>
         <section className="habit">
           <div className="habit__return">
-            <a className="habit__return-link" href="/">
+            <Link to="/" className="habit__return-link">
               <img
                 className="habit__return-image"
                 src={returnButton}
                 alt="Arrow icon that links user back to homepage"
               />
-            </a>
+            </Link>
+
             <h1 className="habit__title">Choose a Habit to focus on:</h1>
           </div>
 
