@@ -3,10 +3,6 @@
 
 .homepage {
   background-color: $primary-honeydew;
-  // background-image: url(../../assets/images/homepage-wallpaper.jpeg);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
   width: 100%;
   min-height: 100vh;
 
@@ -93,11 +89,12 @@
   }
 
   &__submit {
-    background-color: white;
-    color: black;
+    cursor: pointer;
+    background-color: $primary-white;
+    color: $primary-black;
     font-size: 14px;
     text-transform: capitalize;
-    border: 0.5px solid black;
+    border: 0.5px solid $primary-black;
     padding: 1rem 3rem;
     border-radius: 30px;
     margin-top: 0.1rem;
