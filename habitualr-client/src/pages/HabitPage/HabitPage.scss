@@ -50,22 +50,12 @@
   }
 
   &__chosen {
-    // background-color: $primary-white;
-    // color: $primary-black;
-    // text-transform: capitalize;
-    // font-size: 14px;
-    // border: none;
-    // border-radius: 5px;
-    // width: 15rem;
-    // padding: 1rem;
-    // margin: 0.8rem;
-    // box-shadow: 0 4px 4px -1px rgb(0 0 0 / 20%);
-
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    width: 15rem;
+    cursor: pointer;
+    width: 18rem;
     padding: 1rem;
     margin-top: 16px;
     max-height: 3em;
@@ -92,6 +82,11 @@
     }
   }
 
+  &__chosen:hover {
+    background-color: #9bc8e8;
+    transition: all 0.5s;
+  }
+
   &__icon {
     width: 2rem;
 
@@ -99,12 +94,4 @@
       width: 3rem;
     }
   }
-
-  // this will be positon of all icons in the button
-
-  // &__image {
-
-  // }
-
-  // this will be the image specific to the button/habit.
 }

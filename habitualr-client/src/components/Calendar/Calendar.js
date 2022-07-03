@@ -10,14 +10,14 @@ export default class Calendar extends React.Component {
   state = {
     weekendsVisible: true,
     currentEvents: [],
-    isHabitDone: false,
+    // isHabitDone: false,
   };
 
-  toggleComplete = () => {
-    this.setState({
-      isHabitDone: !this.state.isHabitDone,
-    });
-  };
+  // toggleComplete = () => {
+  //   this.setState({
+  //     isHabitDone: !this.state.isHabitDone,
+  //   });
+  // };
 
   //   onClick={this.toggleComplete}
 
@@ -100,29 +100,26 @@ export default class Calendar extends React.Component {
   //     });
   //   };
 
-  //   handleDateSelect = (selectInfo) => {
-  //     // let title = prompt("Please enter a new title for your event");
-  //     let calendarApi = selectInfo.view.calendar;
+  handleDateSelect = (selectInfo) => {
+    let title = prompt("Please enter a new title for your event");
+    let calendarApi = selectInfo.view.calendar;
 
-  //     calendarApi.unselect(); // clear date selection
+    calendarApi.unselect(); // clear date selection
 
-  //     if (title) {
-  //       calendarApi.addEvent({
-  //         id: createEventId(),
-  //         title,
-  //         start: selectInfo.startStr,
-  //         end: selectInfo.endStr,
-  //         allDay: selectInfo.allDay,
-  //       });
-  //     }
-  //   };
+    if (title) {
+      calendarApi.addEvent({
+        id: createEventId(),
+        title,
+        start: selectInfo.startStr,
+        end: selectInfo.endStr,
+        allDay: selectInfo.allDay,
+      });
+    }
+  };
 
   handleEventClick = (clickInfo) => {
     if (
-      window
-        .confirm
-        // `Are you sure you want to delete the event '${clickInfo.event.title}'`
-        ()
+      window.confirm`Are you sure you want to delete the event '${clickInfo.event.title}'`()
     ) {
       clickInfo.event.remove();
     }
@@ -138,23 +135,23 @@ export default class Calendar extends React.Component {
 function renderEventContent(eventInfo) {
   return (
     <>
-      {/* <b>{eventInfo.timeText}</b>
-      <i>{eventInfo.event.title}</i> */}
+      <b>{eventInfo.timeText}</b>
+      <i>{eventInfo.event.title}</i>
     </>
   );
 }
 
-// function renderSidebarEvent(event) {
-//   return (
-//     <li key={event.id}>
-//       <b>
-//         {formatDate(event.start, {
-//           year: "numeric",
-//           month: "short",
-//           day: "numeric",
-//         })}
-//       </b>
-//       {/* <i>{event.title}</i> */}
-//     </li>
-//   );
-// }
+function renderSidebarEvent(event) {
+  return (
+    <li key={event.id}>
+      <b>
+        {formatDate(event.start, {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}
+      </b>
+      <i>{event.title}</i>
+    </li>
+  );
+}
