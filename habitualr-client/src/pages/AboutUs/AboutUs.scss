@@ -1,0 +1,105 @@
+@use "../../styles/partials/_typography.scss" as *;
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.italic {
+  font-style: italic;
+}
+
+.aboutus {
+  &__body {
+    padding: 1rem;
+
+    @include tablet {
+      padding: 2rem;
+    }
+
+    @include desktop {
+      padding: 4rem;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+
+  &__definition {
+    line-height: 1.8;
+  }
+
+  &__define-title {
+    font-size: 26px;
+
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__noun {
+    font-size: 16px;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+
+  &__define-text {
+    font-size: 14px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include desktop {
+    }
+  }
+
+  &__para-one,
+  &__para-two {
+    font-size: 17px;
+    @include tablet {
+      font-size: 18px;
+      margin-top: 1rem;
+    }
+  }
+
+  &__para-two {
+    margin-top: 1rem;
+
+    @include tablet {
+      margin-top: 2rem;
+    }
+  }
+
+  &__card {
+    background-color: #5995df;
+    color: white;
+    min-height: 20rem;
+    max-height: 30rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 5px 5px 3px rgb(0 0 0 / 20%);
+
+    @include tablet {
+      max-width: 40rem;
+      min-height: 16rem;
+      max-height: 18rem;
+      margin: 4rem 1.25rem 2rem 1.25rem;
+    }
+
+    @include desktop {
+      max-width: 50rem;
+      min-height: 18rem;
+      max-height: 25rem;
+      margin-left: 2rem;
+    }
+  }
+}

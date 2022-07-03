@@ -1,20 +1,107 @@
 @use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
 
 .homepage {
+  background-color: $primary-honeydew;
+  width: 100%;
+  min-height: 100vh;
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__brand {
+    padding-top: 2rem;
+
+    @include desktop {
+      margin: 3rem;
+    }
+  }
+  &__brand-statement {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $primary-black;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include desktop {
+      font-size: 28px;
+    }
+  }
+
+  &__blurb {
+    margin-top: 2rem;
+
+    @include tablet {
+      width: 80%;
+    }
+    @include desktop {
+      width: 50%;
+    }
+  }
+
+  &__blurb-text {
+    letter-spacing: 1px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include desktop {
+      font-size: 18px;
+    }
+  }
+
+  &__logo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+
+    @include desktop {
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0 1rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &__brand-logo {
+    width: 6rem;
+
+    @include desktop {
+      margin-left: 3rem;
+    }
+  }
+
   &__form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+
+    @include desktop {
+      justify-content: flex-start;
+    }
   }
 
   &__submit {
-    background-color: #323232;
-    color: #ffffff;
+    cursor: pointer;
+    background-color: $primary-white;
+    color: $primary-black;
     font-size: 14px;
     text-transform: capitalize;
-    border: none;
+    border: 0.5px solid $primary-black;
     padding: 1rem 3rem;
     border-radius: 30px;
+    margin-top: 0.1rem;
+  }
+
+  &__submit:hover {
+    background-color: #9bc8e8;
+    transition: all 0.5s;
   }
 }

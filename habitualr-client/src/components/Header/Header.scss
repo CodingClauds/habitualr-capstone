@@ -20,8 +20,14 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     @include tablet {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
   }
@@ -34,6 +40,10 @@
     display: flex;
     justify-content: space-between;
     width: 20rem;
+
+    // @include tablet {
+    //   width: 20rem;
+    // }
   }
 
   &__nav-item {
