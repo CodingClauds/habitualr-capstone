@@ -16,6 +16,12 @@ function Header() {
               </li>
 
               <li className="brand__nav-item">
+                <Link to="/habit" activeClassName="is-active">
+                  <p className="brand__bold">Habits</p>
+                </Link>
+              </li>
+
+              <li className="brand__nav-item">
                 <Link to="/about-us" activeClassName="is-active">
                   <p className="brand__bold">About Us</p>
                 </Link>
