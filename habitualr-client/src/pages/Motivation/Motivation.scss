@@ -1,0 +1,44 @@
+.description {
+  height: 100vh;
+  background-color: navy;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-width: 18rem;
+    max-width: 18rem;
+    min-height: 25rem;
+    max-height: 25rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 50%);
+  }
+
+  &__return-image {
+    width: 1.5rem;
+  }
+
+  &__habit-id {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__info-image {
+    width: 1.5rem;
+  }
+
+  // &__subtitle {
+  //   font-size: 16px;
+  // }
+
+  &__text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    // padding: 1.2rem;
+    // margin-top: 1rem;
+  }
+}
