@@ -1,7 +1,5 @@
-@use "../../styles/partials/_typography.scss" as *;
 @use "../../styles/partials/_variables.scss" as *;
 @use "../../styles/partials/_mixins.scss" as *;
-@use "../../styles/partials/_globals.scss" as *;
 
 .is-active {
   font-weight: bold;
@@ -38,27 +36,23 @@
 
   &__nav-list {
     display: flex;
-    // flex-direction: column;
-    justify-content: space-between;
-    width: 12rem;
-
-    // @include tablet {
-    //   width: 20rem;
-    // }
+    justify-content: space-around;
+    width: 20rem;
+    height: 2rem;
   }
 
   &__nav-item {
     font-size: 20px;
-    color: black;
+    color: $primary-black;
   }
 
   &__nav-item:hover {
-    border-bottom: 3px solid gray;
+    border-bottom: 3px solid $secondary-slate;
     transition: all 0.3s;
   }
 
   &__bold {
-    color: black;
+    color: $primary-black;
   }
 
   &__site-logo {
@@ -72,11 +66,4 @@
     font-weight: 600;
     color: $primary-black;
   }
-
-  // &__item-statement {
-  //   font-size: 1.3rem;
-  //   font-weight: 300;
-  //   color: $primary-black;
-  //   margin: 0.5rem 0;
-  // }
 }
