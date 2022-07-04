@@ -9,7 +9,7 @@ function TrackerPage() {
     <>
       <section className="progress">
         <div className="progress__banner">
-          <Link to="/motivation">
+          <Link to="/habit">
             <img
               className="progress__return"
               src={returnIcon}
