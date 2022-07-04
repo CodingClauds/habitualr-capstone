@@ -36,7 +36,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
     @include tablet {
       display: flex;
@@ -91,7 +91,7 @@
     width: 2rem;
 
     @include tablet {
-      width: 3rem;
+      width: 4rem;
     }
   }
 }
