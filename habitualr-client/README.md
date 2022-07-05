@@ -1,4 +1,4 @@
-<img width="30" alt="Sproutr icon" src="https://www.svgrepo.com/show/206068/sprout-tree.svg"> Sproutr
+<h1><img width="30" alt="Sproutr icon" src="https://www.svgrepo.com/show/206068/sprout-tree.svg"> Sproutr</h1>
 
 The biggest obstacle is procrastination and being motivated to start. I find too often that it only takes a little more accountability to keep us in check.
 I for one strongly beileve that we can take on anything we set our mind to.
