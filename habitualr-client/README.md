@@ -15,7 +15,7 @@ In the project directory, you can run:
 
 ```bash
 
-npm install my-project
+npm install
 cd my-project
 
 npm start
@@ -43,8 +43,6 @@ npm run clean # start fresh
 <div display:flex;>
 
 <img width="50" alt="react icon" src="https://camo.githubusercontent.com/27d0b117da00485c56d69aef0fa310a3f8a07abecc8aa15fa38c8b78526c60ac/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667">
-
-<img width="40" alt="node icon" src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png">
 
 <img width="50" alt="html icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg">
 
