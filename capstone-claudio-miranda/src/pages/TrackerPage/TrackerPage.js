@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../TrackerPage/TrackerPage.scss";
+import "./TrackerPage.scss";
 import Calendar from "../../components/Calendar/Calendar";
 import returnIcon from "../../assets/images/back-60.png";
 

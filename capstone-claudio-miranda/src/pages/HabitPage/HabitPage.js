@@ -1,6 +1,6 @@
 import React from "react";
 import returnButton from "../../assets/images/back-60.png";
-import "../HabitPage/HabitPage.scss";
+import "./HabitPage.scss";
 
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";

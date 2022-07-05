@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import "../HomePage/HomePage.scss";
+import "./HomePage.scss";
 import sproutLogo from "../../assets/images/sprout-tree.svg";
 
 class HomePage extends Component {

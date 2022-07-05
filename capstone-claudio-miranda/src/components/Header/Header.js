@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Header/Header.scss";
+import "./Header.scss";
 import brandLogo from "../../assets/images/sprout-tree.svg";
 
 function Header() {
