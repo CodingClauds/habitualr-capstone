@@ -1,10 +1,11 @@
 import "./App.scss";
-import HomePage from "./pages/HomePage/HomePage";
 import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage/HomePage";
 import HabitPage from "./pages/HabitPage/HabitPage";
 import Motivation from "./pages/Motivation/Motivation";
 import Calendar from "./pages/TrackerPage/TrackerPage";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import Footer from "./components/Footer/Footer";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/calendar" component={Calendar} />
           <Route path="/about-us" component={AboutUs} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
