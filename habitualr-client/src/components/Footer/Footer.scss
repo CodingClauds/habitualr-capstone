@@ -1,0 +1,97 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.footer {
+  background-color: #5384a8;
+
+  &__container-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: $primary-white;
+    padding: 2em;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-inline: auto;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__brand {
+    font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__contentbox {
+    padding-top: 1rem;
+    margin: 1rem 0;
+    width: 15rem;
+
+    @include tablet {
+      width: 20rem;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 0.5rem 0;
+  }
+
+  &__text {
+    margin: 0.5rem 0;
+  }
+
+  &__email {
+    color: $primary-white;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+    margin: 3rem 0;
+
+    @include tablet {
+      width: 20rem;
+    }
+  }
+
+  &__handle {
+    width: 3rem;
+  }
+
+  &__copyright-box {
+    display: flex;
+    flex-flow: row wrap;
+    width: 15rem;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 30rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+  }
+
+  &__acknowledgements {
+    display: flex;
+    justify-content: space-between;
+    width: 11rem;
+    margin-top: 0.5rem;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+}
