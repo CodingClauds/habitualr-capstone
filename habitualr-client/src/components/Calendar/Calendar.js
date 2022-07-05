@@ -10,16 +10,7 @@ export default class Calendar extends React.Component {
   state = {
     weekendsVisible: true,
     currentEvents: [],
-    // isHabitDone: false,
   };
-
-  // toggleComplete = () => {
-  //   this.setState({
-  //     isHabitDone: !this.state.isHabitDone,
-  //   });
-  // };
-
-  //   onClick={this.toggleComplete}
 
   render() {
     return (
@@ -31,7 +22,7 @@ export default class Calendar extends React.Component {
             headerToolbar={{
               left: "prev,next today",
               center: "title",
-              right: "dayGridMonth,timeGridWeek",
+              right: "dayGridMonth,timeGridDay",
             }}
             initialView="dayGridMonth"
             events={[
@@ -44,10 +35,10 @@ export default class Calendar extends React.Component {
             dayMaxEvents={true}
             weekends={this.state.weekendsVisible}
             // initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
-            // select={this.handleDateSelect}
-            select={this.dateClick}
-            // eventContent={renderEventContent} // custom render function
-            // eventClick={this.dateClick}
+            select={this.handleDateSelect} // Runs the Alert and User can Input Specific content into Calendar
+            // select={this.dateClick} // Choosing background color
+            eventContent={renderEventContent} // custom render function
+            eventClick={this.dateClick}
             // eventsSet={this.handleEvents} // called after events are initialized/added/changed/removed
             /* you can update a remote database when these fire:
             eventAdd={function(){}}
@@ -63,42 +54,15 @@ export default class Calendar extends React.Component {
   renderSidebar() {
     return (
       <div className="demo-app-sidebar">
-        <div className="demo-app-sidebar-section">
-          {/* <h2>Time to Track your Habit for this month!</h2> */}
-          {/* <ul>
-            <li>Select dates and you will be prompted to create a new event</li>
-            <li>Drag, drop, and resize events</li>
-            <li>Click an event to delete it</li>
-          </ul> */}
-        </div>
-        {/* <div className="demo-app-sidebar-section">
-          <label>
-            <input
-              type="checkbox"
-              checked={this.state.weekendsVisible}
-              onChange={this.handleWeekendsToggle}
-            ></input>
-            toggle weekends
-          </label>
-        </div> */}
-        {/* <div className="demo-app-sidebar-section">
-          <h2>All Events ({this.state.currentEvents.length})</h2>
-          <ul>{this.state.currentEvents.map(renderSidebarEvent)}</ul>
-        </div> */}
+        <div className="demo-app-sidebar-section"></div>
       </div>
     );
   }
-  dateClick = function (info) {
-    // change the day's background color just for fun
-    console.log(info);
-    info.jsEvent.target.style.backgroundColor = "lightgreen";
-  };
-
-  //   handleWeekendsToggle = () => {
-  //     this.setState({
-  //       weekendsVisible: !this.state.weekendsVisible,
-  //     });
-  //   };
+  // dateClick = function (info) {
+  //   // change the day's background color just for fun
+  //   console.log(info);
+  //   info.jsEvent.target.style.backgroundColor = "lightblue";
+  // };
 
   handleDateSelect = (selectInfo) => {
     let title = prompt("Please enter a new title for your event");
@@ -138,20 +102,5 @@ function renderEventContent(eventInfo) {
       <b>{eventInfo.timeText}</b>
       <i>{eventInfo.event.title}</i>
     </>
-  );
-}
-
-function renderSidebarEvent(event) {
-  return (
-    <li key={event.id}>
-      <b>
-        {formatDate(event.start, {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}
-      </b>
-      <i>{event.title}</i>
-    </li>
   );
 }
