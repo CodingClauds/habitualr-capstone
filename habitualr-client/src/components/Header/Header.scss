@@ -7,13 +7,16 @@
 
 .brand {
   text-align: center;
-  padding: 1rem 3rem;
+  padding: 1rem;
   background-color: $background-beige;
-  min-height: 5rem;
+  min-height: 7rem;
 
   @include tablet {
     flex-direction: row;
     justify-content: flex-start;
+    padding: 1rem 3rem;
+  }
+  @include desktop {
     padding: 1rem 5rem;
   }
 
@@ -30,40 +33,65 @@
     }
   }
 
+  &__image-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  &__image {
+    width: 3rem;
+  }
+
+  &__item-title {
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-weight: 600;
+    color: $primary-black;
+  }
+
   &__nav {
     margin: 1rem;
+
+    @include tablet {
+      margin: 0;
+    }
   }
 
   &__nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 20rem;
     height: 2rem;
+
+    @include tablet {
+      width: 22rem;
+    }
+
+    @include desktop {
+      width: 30rem;
+    }
   }
 
   &__nav-item {
     font-size: 20px;
     color: $primary-black;
+
+    @include tablet {
+      font-size: 22px;
+    }
   }
 
   &__nav-item:hover {
     border-bottom: 3px solid $secondary-slate;
+    padding-bottom: 1.5rem;
     transition: all 0.3s;
   }
 
   &__bold {
-    color: $primary-black;
-  }
-
-  &__site-logo {
-    width: 4rem;
-  }
-
-  &__item-title {
-    font-size: 3rem;
-    letter-spacing: -1px;
-    font-style: italic;
-    font-weight: 600;
     color: $primary-black;
   }
 }
