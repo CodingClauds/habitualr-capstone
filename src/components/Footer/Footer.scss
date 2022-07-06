@@ -2,7 +2,7 @@
 @use "../../styles/partials/_mixins.scss" as *;
 
 .footer {
-  background-color: #5384a8;
+  background-color: $background-footer;
 
   &__container-wrapper {
     display: flex;
