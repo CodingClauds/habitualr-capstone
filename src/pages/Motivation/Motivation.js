@@ -25,10 +25,6 @@ function Motivation(props) {
     getHabit();
   }, []);
 
-  // getDoc(docRef).then((doc) => {
-  //   console.log(doc.data(), doc.id);
-  // });
-
   return (
     <>
       <section className="description">

@@ -7,33 +7,10 @@ import { useEffect, useState } from "react";
 import { db } from "../../firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 
-// class HabitPage extends Component {
-//   onClick = (e) => {
-//     e.preventDefault();
-//     this.props.history.push("/motivation");
-//   };
-
-//   render() {
-//     return (
-//       <>
-//       </>
-//     );
-//   }
-// }
-
-// onclick to specific habit with the habit title / habit descrpition and effort.
-// LINK to page? or just make its own habit description page?
-
 function HabitPage() {
-  // onClick = (e) => {
-  //   e.preventDefault();
-  //   this.props.history.push("/motivation");
-  // };
-
   const [habits, setHabits] = useState([]);
   const habitsCollection = collection(db, "habits");
 
-  // Get all documents/habits in db.
   useEffect(() => {
     const getHabits = async () => {
       const data = await getDocs(habitsCollection);

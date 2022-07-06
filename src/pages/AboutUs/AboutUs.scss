@@ -9,6 +9,7 @@
 .aboutus {
   background-color: $primary-honeydew;
   height: 100%;
+  padding: 2rem 0;
 
   &__body {
     padding: 1rem;
@@ -34,6 +35,7 @@
 
   &__definition {
     line-height: 1.8;
+    width: 80%;
   }
 
   &__define-title {
@@ -54,13 +56,10 @@
   }
 
   &__define-text {
-    font-size: 14px;
+    font-size: 15px;
 
     @include tablet {
       font-size: 18px;
-    }
-
-    @include desktop {
     }
   }
 
@@ -82,8 +81,8 @@
   }
 
   &__card {
-    background-color: #5995df;
-    color: white;
+    background-color: $primary-white;
+    color: $primary-black;
     min-height: 20rem;
     max-height: 30rem;
     padding: 1.5rem;

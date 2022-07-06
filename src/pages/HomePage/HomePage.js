@@ -15,7 +15,6 @@ class HomePage extends Component {
         <div className="homepage">
           <div className="homepage__content">
             <div className="homepage__brand">
-              {/* <h1 className="homepage__brand-title">Sproutr</h1> */}
               <h2 className="homepage__brand-statement">
                 Build &amp; Track the Habits that matter
               </h2>
@@ -24,7 +23,7 @@ class HomePage extends Component {
                 <p className="homepage__blurb-text">
                   Bad news is that time flies, the good news is that your the
                   pilot! Habits don't sprout if you dont plant them. Start
-                  making those changes that make the difference.
+                  making those changes and watch them grow.
                 </p>
               </div>
               <div className="homepage__logo-content">

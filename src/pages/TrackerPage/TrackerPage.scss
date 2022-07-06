@@ -40,15 +40,11 @@
   &__title {
     font-size: 26px;
 
-    @include tablet {
-    }
-
     @include desktop {
       font-size: 30px;
     }
   }
 
-  // could this take at desktop level?
   &__container {
     margin-top: 1.4rem;
 
