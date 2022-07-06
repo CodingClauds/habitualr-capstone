@@ -11,12 +11,19 @@ It's a digital tracker / calendar that helps visualize your progress with motiva
 
 ## Installation
 
-In the project directory, you can run:
+Download the Zip or Clone to your CLI  
+
+Once In the project directory, you can run:
 
 ```bash
 
-npm install
-cd my-project
+npm install 
+  Confirm node_modules are installed
+
+npm start 
+  Your app is ready to be deployed
+  
+Additional info on Commands: 
 
 npm start
 # Runs the app in the development mode.
@@ -26,7 +33,6 @@ npm start
 npm run build
 # Builds the app for production to the `build` folder.
 # It correctly bundles React in production mode and optimizes the build for the best performance.
-# Your app is ready to be deployed!
 
 npm run start
 # which builds and opens a web browser
