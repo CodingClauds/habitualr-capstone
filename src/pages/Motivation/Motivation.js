@@ -7,8 +7,6 @@ import { db } from "../../firebase-config";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
-// class Motivation extends Component {
-
 function Motivation(props) {
   const [habit, setHabit] = useState(null);
 
@@ -43,9 +41,9 @@ function Motivation(props) {
                 alt="Arrow icon that links user back to homepage"
               />
             </Link>
-            {/* dynamic habit, depending on the users input */}
+
             <h1 className="description__habit-id">{habit?.habit}</h1>
-            {/* modal for details about the habit? || Display the description of the habit and how much time to dedicate towards or start with etc. */}
+
             <div className="description__info">
               <img
                 className="description__info-image"
@@ -56,9 +54,9 @@ function Motivation(props) {
           </div>
           <div className="description__content">
             <p className="description__text">{habit?.description}</p>
-            <p className="description__text">{habit?.commitment}</p>
+            <p className="description__commitment">{habit?.commitment}</p>
           </div>
-          {/* this will take us to the calendar page */}
+
           <Link to="/calendar">
             <button className="description__calendar-btn" type="button">
               Let's Track your Progress!
