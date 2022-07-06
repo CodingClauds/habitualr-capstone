@@ -8,7 +8,7 @@
   align-items: center;
   height: 100%;
   padding: 3rem 0;
-  background-color: #a5d4a5aa;
+  background-color: $primary-honeydew;
 
   @include tablet {
     justify-content: flex-start;
@@ -67,12 +67,11 @@
 
     @include desktop {
       font-size: 22px;
-      // margin-top: 1rem;
     }
   }
 
   &__calendar {
-    background-color: white;
+    background-color: $primary-white;
     padding: 1rem;
     margin-top: 2rem;
     width: 100%;
