@@ -83,3 +83,7 @@ Key Implementations to be added:
 
 - Calendar
   - Utilizing the "Full-Calendar" Library that to its full potential. Understanding more of the plugin features that the library has to offer.
+  
+- Progress Chart 
+  - A way of showing the progress and showing the results to keep the user engaged or potentially a point system or badge system when the user is on a role with their habit. 
+  
