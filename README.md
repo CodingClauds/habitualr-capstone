@@ -78,8 +78,7 @@ Key Implementations to be added:
   - Including Form Validation which would give user feedback specifically what errors are in the form.
 
 - User Profile
-
-  - Page layout for a user that succesfully logs into the site / account.
+  - Page layout for a user that successfully logs into the site / account.
 
 - Calendar
   - Utilizing the "Full-Calendar" Library that to its full potential. Understanding more of the plugin features that the library has to offer.
