@@ -26,7 +26,7 @@ export default function Signup() {
             </label>
             <input
               className="login__input password"
-              type="text"
+              type="password"
               name="password"
               id="password"
               placeholder="min 8 characters"
