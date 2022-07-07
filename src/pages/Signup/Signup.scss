@@ -1,0 +1,83 @@
+@use "../../styles/partials/_variables.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.login {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  @include tablet {
+    padding: 5rem;
+  }
+
+  &__label-password,
+  &__label-email,
+  &__title {
+    color: $primary-black;
+  }
+
+  &__card {
+    padding: 1rem;
+    background-color: $secondary-cloud;
+    border-radius: 10px;
+    width: 30rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  &__label-password {
+    margin-top: 2rem;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    border: 0.0625rem solid $secondary-lightgrey;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    color: $secondary-slate;
+  }
+
+  &__checked-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  &__keep-login {
+    margin: 0 10px;
+  }
+
+  &__forgot-password {
+    color: $primary-black;
+  }
+
+  &__btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: $secondary-steelblue;
+    color: $primary-white;
+    font-size: 18px;
+  }
+}
