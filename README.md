@@ -13,6 +13,12 @@ It's a digital tracker / calendar that helps visualize your progress with motiva
 
 Download the Zip or Clone to your CLI  
 
+One thing to note:
+
+Firebase was used for the database and it is a Realtime Database, more importantly it runs in the Front-end Environment (Client Side) which does not require any back-end (Server Side) intitiation. 
+
+This is a cloud-hosted NoSQL database that lets you store and sync data between your users in realtime. There is a new feature on Cloud Firestore enables you to store, sync and query app data at global scale. 
+
 Once In the project directory, you can run:
 
 ```bash
