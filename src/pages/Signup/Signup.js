@@ -44,7 +44,7 @@ export default function Signup() {
                   Keep me Logged in
                 </label>
               </div>
-              <a className="login__forgot-password" href="#">
+              <a className="login__forgot-password" href="/sign-in">
                 Forgot password?
               </a>
             </div>

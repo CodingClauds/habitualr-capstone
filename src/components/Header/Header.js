@@ -9,13 +9,16 @@ function Header() {
         <div className="brand__content">
           <div className="brand__image-cont">
             <img className="brand__image" src={brandLogo} alt="brand logo" />
-            <h1 className="brand__item-title">Sproutr</h1>
+            <a href="/">
+              <h1 className="brand__item-title">Sproutr</h1>
+            </a>
           </div>
+
           <nav className="brand__nav">
             <ul className="brand__nav-list">
               <li className="brand__nav-item">
-                <Link to="/" activeclassname="is-active">
-                  <p className="brand__bold">Home</p>
+                <Link to="/sign-in" activeclassname="is-active">
+                  <p className="brand__bold">Sign In</p>
                 </Link>
               </li>
 
