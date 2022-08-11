@@ -6,7 +6,7 @@ import sproutLogo from "../../assets/images/sprout-tree.svg";
 class HomePage extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.history.push("/sign-up");
+    this.props.history.push("/sign-in");
   };
 
   render() {
