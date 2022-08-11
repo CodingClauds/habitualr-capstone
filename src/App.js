@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/sign-up" component={Signup} />
+          <Route exact path="/sign-in" component={Signup} />
           <Route path="/habit" component={HabitPage} />
           <Route path="/motivation/:id" component={Motivation} />
           <Route path="/calendar" component={Calendar} />
