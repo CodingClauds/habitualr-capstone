@@ -12,11 +12,11 @@ export const INITIAL_EVENTS = [
     title: "Timed event",
     start: todayStr + "T12:00:00",
   },
-  {
-    id: createEventId(),
-    title: "Timed event",
-    start: "2022-06-20" + "T12:00:00",
-  },
+  // {
+  //   id: createEventId(),
+  //   title: "Timed event",
+  //   start: "2022-06-20" + "T12:00:00",
+  // },
 ];
 
 export function createEventId() {
