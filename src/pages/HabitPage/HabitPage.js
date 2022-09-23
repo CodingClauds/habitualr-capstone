@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import returnButton from "../../assets/images/back-60.png";
+import placeholderImage from "../../assets/images/upload-logo.png";
 import "./HabitPage.scss";
 
 import { db, storage } from "../../firebase-config";
@@ -20,13 +21,13 @@ function HabitPage() {
   const [habits, setHabits] = useState([]);
   const habitsCollection = collection(db, "habits");
 
-  useEffect(() => {
-    const getHabits = async () => {
-      const data = await getDocs(habitsCollection);
-      setHabits(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getHabits();
-  }, [habitsCollection]);
+  // useEffect(() => {
+  //   const getHabits = async () => {
+  //     const data = await getDocs(habitsCollection);
+  //     setHabits(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getHabits();
+  // }, [habitsCollection]);
 
   const [newHabit, setNewHabit] = useState("");
   const [newCommitment, setNewCommitment] = useState("");
@@ -89,45 +90,59 @@ function HabitPage() {
     <>
       <section className="habit">
         <div className="habit__form">
-          <input
-            className="habit__userHabit"
-            type="text"
-            name=""
-            id=""
-            placeholder="Write a Habit"
-            onChange={(event) => {
-              setNewHabit(event.target.value);
-            }}
-          />
+          <div className="habit__imageContainer">
+            <img
+              className="habit__image"
+              src={placeholderImage}
+              alt="placeholder"
+            />
+          </div>
 
-          <input
-            className="habit__userCommitment"
-            type="text"
-            id=""
-            placeholder="Duration"
-            onChange={(event) => {
-              setNewCommitment(event.target.value);
-            }}
-          />
+          <div className="habit__userForm">
+            <div className="habit__userInput">
+              <input
+                className="habit__userHabit"
+                type="text"
+                name=""
+                id=""
+                placeholder="Write a Habit"
+                onChange={(event) => {
+                  setNewHabit(event.target.value);
+                }}
+              />
+            </div>
 
-          <textarea
-            className="habit__userDescription"
-            type="text"
-            name=""
-            id=""
-            placeholder="Description"
-            onChange={(event) => {
-              setNewDescription(event.target.value);
-            }}
-          />
-          <div className="habit__btn-container">
-            <button
-              typeof="submit"
-              className="habit__btn-upload"
-              onClick={createNewHabit}
-            >
-              Upload
-            </button>
+            <div className="habit__userInput">
+              <input
+                className="habit__userCommitment"
+                type="text"
+                id=""
+                placeholder="Duration"
+                onChange={(event) => {
+                  setNewCommitment(event.target.value);
+                }}
+              />
+            </div>
+
+            <textarea
+              className="habit__userDescription"
+              type="text"
+              name=""
+              id=""
+              placeholder="Description"
+              onChange={(event) => {
+                setNewDescription(event.target.value);
+              }}
+            />
+            <div className="habit__btn-container">
+              <button
+                typeof="submit"
+                className="habit__btn-upload"
+                onClick={createNewHabit}
+              >
+                Upload
+              </button>
+            </div>
           </div>
         </div>
 
