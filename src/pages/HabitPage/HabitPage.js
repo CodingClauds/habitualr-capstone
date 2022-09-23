@@ -99,7 +99,11 @@ function HabitPage() {
             }}
           />
           <div className="habit__btn-container">
-            <button className="habit__btn-upload" onClick={createNewHabit}>
+            <button
+              typeof="submit"
+              className="habit__btn-upload"
+              onClick={createNewHabit}
+            >
               Upload
             </button>
           </div>

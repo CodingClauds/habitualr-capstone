@@ -10,11 +10,15 @@
 
   &__form {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
     border-radius: 5px;
     background-color: #bdc5d5;
     margin: 2rem;
     padding: 1rem;
   }
+
   &__userHabit,
   &__userCommitment {
     padding: 0.5rem;
@@ -27,7 +31,6 @@
   }
 
   &__userCommitment {
-    margin-left: 1rem;
     border-radius: 20px;
     border: 0.5px solid gray;
   }
@@ -43,14 +46,9 @@
     font-family: sans-serif;
   }
 
-  &__btn-container {
-    // display: flex;
-    // justify-content: center;
-  }
-
   &__btn-upload {
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 5px;
     background-color: #3168ac;
