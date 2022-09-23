@@ -2,15 +2,20 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import returnButton from "../../assets/images/back-60.png";
+import placeholderImage from "../../assets/images/upload-logo.png";
 import "./HabitPage.scss";
 
 import { db, storage } from "../../firebase-config";
-import { collection, getDocs, addDoc } from "firebase/firestore";
-import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
-import { v4 } from "uuid";
-
-// import Swal from "sweetalert2";
-// const Swal = require("sweetalert2");
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
+// import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
+// import { v4 } from "uuid";
 
 function HabitPage() {
   // Implement this successful upload modal once the upload section is complete.
@@ -26,99 +31,130 @@ function HabitPage() {
   const [habits, setHabits] = useState([]);
   const habitsCollection = collection(db, "habits");
 
-  const [newHabit, setNewHabit] = useState("");
-  const [newDescription, setNewDescription] = useState("");
-  const [newCommitment, setNewCommitment] = useState("");
+  // useEffect(() => {
+  //   const getHabits = async () => {
+  //     const data = await getDocs(habitsCollection);
+  //     setHabits(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  //   };
+  //   getHabits();
+  // }, [habitsCollection]);
 
+  const [newHabit, setNewHabit] = useState("");
+  const [newCommitment, setNewCommitment] = useState("");
+  const [newDescription, setNewDescription] = useState("");
+
+  // Create Document
   const createNewHabit = async () => {
     await addDoc(habitsCollection, {
       habit: newHabit,
-      description: newDescription,
       commitment: newCommitment,
+      description: newDescription,
     });
   };
 
-  const [imageUpload, setImageUpload] = useState(null);
-  const [imageList, setImageList] = useState([]);
-
-  const imageListRef = ref(storage, "images/");
-  const uploadImage = () => {
-    if (imageUpload == null) return;
-    const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
-    uploadBytes(imageRef, imageUpload).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((url) => {
-        setImageList((prev) => [...prev, url]);
-      });
-    });
+  // Update Document
+  const updateHabit = async (id, habit) => {
+    const userDoc = doc(db, "habit", id);
+    // Find out what you want to update, the name of the document. Look on firebase when you have access.
+    const newFields = {};
+    await updateDoc(userDoc, newFields);
   };
 
-  useEffect(() => {
-    listAll(imageListRef).then((response) => {
-      response.items.forEach((item) => {
-        getDownloadURL(item).then((url) => {
-          setImageList((prev) => [...prev, url]);
-        });
-      });
-    });
-  }, []);
+  // Delete Document
+  const deleteHabit = async (id, habit) => {
+    const userDoc = doc(db, "habit", id);
+    await deleteDoc(userDoc);
+  };
 
-  useEffect(() => {
-    const getHabits = async () => {
-      const data = await getDocs(habitsCollection);
-      setHabits(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getHabits();
-  }, []);
+  // // Initializing variables for our new habit image we want to add to our habit card.
+  // // Expect: We want to ADD/CREATE to our collection.
+
+  // const [imageUpload, setImageUpload] = useState(null);
+  // const [imageList, setImageList] = useState([]);
+
+  // const imageListRef = ref(storage, "images/");
+
+  // // Upload Image function that will allow user to pick an image, and upload it to the database.
+  // const uploadImage = () => {
+  //   if (imageUpload == null) return;
+
+  //   const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
+  //   uploadBytes(imageRef, imageUpload).then((snapshot) => {
+  //     getDownloadURL(snapshot.ref).then((url) => {
+  //       setImageList((prev) => [...prev, url]);
+  //     });
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   listAll(imageListRef).then((response) => {
+  //     response.items.forEach((item) => {
+  //       getDownloadURL(item).then((url) => {
+  //         setImageList((prev) => [...prev, url]);
+  //       });
+  //     });
+  //   });
+  // }, []);
 
   return (
     <>
       <section className="habit">
-        {/* The Upload will need 4 parameters, the user chosen habit, commitment, image. The last one is a Universally unique identifier UUID */}
-
-        {/* Write a Habit and Durartion ARE WORKING. WRITES DATA TO FIREBASE! */}
         <div className="habit__form">
-          <input
-            className="habit__userHabit"
-            type="text"
-            name=""
-            id=""
-            placeholder="Write a Habit"
-            onChange={(event) => {
-              setNewHabit(event.target.value);
-            }}
-          />
+          <div className="habit__imageContainer">
+            <img
+              className="habit__image"
+              src={placeholderImage}
+              alt="placeholder"
+            />
+          </div>
 
-          <input
-            className="habit__userCommitment"
-            type="text"
-            name=""
-            id=""
-            placeholder="Duration"
-            onChange={(event) => {
-              setNewCommitment(event.target.value);
-            }}
-          />
-          <div className="habit__btn-container">
-            <button
-              typeof="submit"
-              className="habit__btn-upload"
-              onClick={createNewHabit}
-            >
-              Upload
-            </button>
+          <div className="habit__userForm">
+            <div className="habit__userInput">
+              <input
+                className="habit__userHabit"
+                type="text"
+                name=""
+                id=""
+                placeholder="Write a Habit"
+                onChange={(event) => {
+                  setNewHabit(event.target.value);
+                }}
+              />
+            </div>
+
+            <div className="habit__userInput">
+              <input
+                className="habit__userCommitment"
+                type="text"
+                id=""
+                placeholder="Duration"
+                onChange={(event) => {
+                  setNewCommitment(event.target.value);
+                }}
+              />
+            </div>
+
+            <textarea
+              className="habit__userDescription"
+              type="text"
+              name=""
+              id=""
+              placeholder="Description"
+              onChange={(event) => {
+                setNewDescription(event.target.value);
+              }}
+            />
+            <div className="habit__btn-container">
+              <button
+                typeof="submit"
+                className="habit__btn-upload"
+                onClick={createNewHabit}
+              >
+                Upload
+              </button>
+            </div>
           </div>
         </div>
-        {/* <textarea
-            className="habit__userDescription"
-            // resize: vertical;
-            type="text"
-            name=""
-            id=""
-            placeholder="Description"
-            onChange={(event) => {
-              setNewDescription(event.target.value);
-            }}
-          /> */}
 
         {/* <input
           className="habit__imageUpload"
@@ -146,7 +182,7 @@ function HabitPage() {
             />
           </Link>
 
-          <h1 className="habit__title">Choose a Habit to focus on:</h1>
+          <h1 className="habit__title">Choose a Habit to focus on</h1>
         </div>
 
         <div className="habit__content">
