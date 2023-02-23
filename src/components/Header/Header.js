@@ -23,19 +23,13 @@ function Header() {
         <div className="brand__content">
           <div className="brand__image-cont">
             <img className="brand__image" src={brandLogo} alt="brand logo" />
-            <a href="/">
+            <Link to="/">
               <h1 className="brand__item-title">Sproutr</h1>
-            </a>
+            </Link>
           </div>
 
-          {/* <nav className="brand__nav">
+          <nav className="brand__nav">
             <ul className="brand__nav-list">
-              <li className="brand__nav-item">
-                <Link to="/sign-in" activeclassname="is-active">
-                  <p className="brand__bold">Sign In</p>
-                </Link>
-              </li>
-
               <li className="brand__nav-item">
                 <Link to="/habit" activeclassname="is-active">
                   <p className="brand__bold">Habits</p>
@@ -60,7 +54,7 @@ function Header() {
                 </Link>
               </li>
             </ul>
-          </nav> */}
+          </nav>
 
           <button className={`hamburger ${hamburger}`} onClick={toggleMenu}>
             <div className="bar"></div>
